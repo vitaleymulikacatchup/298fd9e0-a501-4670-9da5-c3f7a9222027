@@ -1,4 +1,4 @@
-use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingInline from '@/components/navbar/NavbarLayoutFloatingInline';
@@ -31,12 +31,10 @@ export default function Page() {
       borderRadius="pill"
     >
       <div id="nav" data-section="nav" className="scroll-mt-24">
-        <div className="mx-auto px-4 md:px-6">
-          <NavbarLayoutFloatingInline 
-            navItems={[{ name: "Courses", id: "courses" }, { name: "About", id: "about" }, { name: "Testimonials", id: "testimonials" }, { name: "Contact", id: "contact" }]} 
-            brandName="Tate Courses" 
-          />
-        </div>
+        <NavbarLayoutFloatingInline 
+          navItems={[{ name: "Courses", id: "courses" }, { name: "About", id: "about" }, { name: "Testimonials", id: "testimonials" }, { name: "Contact", id: "contact" }]} 
+          brandName="Tate Courses" 
+        />
       </div>
 
       <div id="hero" data-section="hero" className="scroll-mt-24">
